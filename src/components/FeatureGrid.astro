@@ -1,0 +1,33 @@
+---
+interface Feature {
+  title: string;
+  description: string;
+  icon?: string;
+}
+
+interface Props {
+  features: Feature[];
+}
+
+const { features } = Astro.props;
+---
+
+<section class="py-24 sm:py-32">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {features.map((feature, i) => (
+        <div
+          class="rounded-2xl border border-apple-hairline bg-apple-card p-8 shadow-[0_2px_12px_rgba(0,0,0,0.06)]"
+          data-reveal
+          style={`--reveal-delay: ${i * 100}ms`}
+        >
+          {feature.icon && (
+            <div class="mb-4 text-3xl">{feature.icon}</div>
+          )}
+          <h3 class="text-lg font-semibold">{feature.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-apple-muted">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

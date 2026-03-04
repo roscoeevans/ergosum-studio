@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.astro";
+import FeatureGrid from "../../components/FeatureGrid.astro";
+
+const features = [
+  {
+    title: "Evening Wind-Down",
+    description: "Guided prompts help you transition from the busyness of the day into a calmer headspace.",
+    icon: "🌙",
+  },
+  {
+    title: "Daily Reflections",
+    description: "Capture what went well and what you'd change — building a habit of honest self-awareness.",
+    icon: "📝",
+  },
+  {
+    title: "Sleep-Friendly Design",
+    description: "Dark interface with warm tones that won't disrupt your circadian rhythm before bed.",
+    icon: "🌑",
+  },
+];
+---
+
+<BaseLayout
+  title="Midnight Society — ErgoSum Studio"
+  description="Your night-time companion for winding down and reflecting on the day."
+>
+  <Hero
+    headline="Midnight Society"
+    subhead="Your night-time companion for winding down and reflecting on the day."
+    ctaLabel="Download on the App Store"
+    ctaHref="#"
+    secondaryCtaLabel="Get Support"
+    secondaryCtaHref="/support#midnight-society"
+  />
+
+  <FeatureGrid features={features} />
+
+  <!-- Screenshot gallery placeholder -->
+  <section class="py-24 sm:py-32">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="mb-12 text-center text-3xl font-semibold" data-reveal>A glimpse inside</h2>
+      <div class="grid gap-6 sm:grid-cols-3" data-reveal style="--reveal-delay: 100ms">
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-indigo-950 to-slate-900"></div>
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-indigo-950 to-slate-900"></div>
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-indigo-950 to-slate-900"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy summary -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">Your data stays yours</h2>
+      <p class="mt-6 text-lg leading-relaxed text-apple-muted">
+        Midnight Society stores your reflections on-device. We don't collect personal data,
+        sell information to third parties, or track your usage. Read our full
+        <a href="/legal/privacy" class="text-blue-600 hover:underline">privacy policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Support CTA -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">Need help?</h2>
+      <p class="mt-4 text-lg text-apple-muted">
+        Reach us at
+        <a href="mailto:support@ergosum.studio" class="text-blue-600 hover:underline">support@ergosum.studio</a>
+        or visit our <a href="/support#midnight-society" class="text-blue-600 hover:underline">support page</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

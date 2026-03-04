@@ -1,0 +1,45 @@
+---
+interface Props {
+  headline: string;
+  subhead?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  secondaryCtaLabel?: string;
+  secondaryCtaHref?: string;
+}
+
+const { headline, subhead, ctaLabel, ctaHref, secondaryCtaLabel, secondaryCtaHref } = Astro.props;
+---
+
+<section class="py-24 sm:py-32 lg:py-40" data-reveal>
+  <div class="mx-auto max-w-3xl px-6 text-center">
+    <h1 class="text-5xl font-semibold leading-tight tracking-tight sm:text-6xl lg:text-7xl">
+      {headline}
+    </h1>
+    {subhead && (
+      <p class="mx-auto mt-6 max-w-xl text-xl leading-relaxed text-apple-muted sm:text-2xl">
+        {subhead}
+      </p>
+    )}
+    {(ctaLabel || secondaryCtaLabel) && (
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+        {ctaLabel && ctaHref && (
+          <a
+            href={ctaHref}
+            class="inline-flex items-center rounded-full bg-apple-text px-7 py-3 text-sm font-medium text-apple-bg transition-opacity hover:opacity-80"
+          >
+            {ctaLabel}
+          </a>
+        )}
+        {secondaryCtaLabel && secondaryCtaHref && (
+          <a
+            href={secondaryCtaHref}
+            class="inline-flex items-center rounded-full border border-apple-hairline px-7 py-3 text-sm font-medium text-apple-text transition-colors hover:bg-white"
+          >
+            {secondaryCtaLabel}
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+</section>

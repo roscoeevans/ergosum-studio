@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<BaseLayout title="ErgoSum Studio">
+  <Hero
+    headline="ErgoSum Studio"
+    subhead="We make apps that respect your time."
+  />
+
+  <!-- Apps row -->
+  <section class="py-24 sm:py-32">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-6 sm:grid-cols-2">
+        <a
+          href="/apps/midnight-society"
+          class="group rounded-3xl border border-apple-hairline bg-apple-card p-10 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-shadow hover:shadow-md"
+          data-reveal
+        >
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-900 to-slate-800 text-2xl text-white">
+            MS
+          </div>
+          <h2 class="text-2xl font-semibold">Midnight Society</h2>
+          <p class="mt-2 text-apple-muted leading-relaxed">
+            Your night-time companion for winding down and reflecting on the day.
+          </p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600 group-hover:underline">
+            Learn more &rarr;
+          </span>
+        </a>
+
+        <a
+          href="/apps/aerie"
+          class="group rounded-3xl border border-apple-hairline bg-apple-card p-10 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-shadow hover:shadow-md"
+          data-reveal
+          style="--reveal-delay: 100ms"
+        >
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-emerald-400 text-2xl text-white">
+            Ae
+          </div>
+          <h2 class="text-2xl font-semibold">Aerie</h2>
+          <p class="mt-2 text-apple-muted leading-relaxed">
+            A calm space to organize your thoughts and find clarity.
+          </p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600 group-hover:underline">
+            Learn more &rarr;
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy section -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold sm:text-4xl">Built with intention</h2>
+      <p class="mt-6 text-lg leading-relaxed text-apple-muted">
+        Every feature we ship earns its place. No dark patterns, no attention traps,
+        no unnecessary notifications. Just thoughtful software that helps you do what
+        you came to do — and then gets out of the way.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Hero from "../../components/Hero.astro";
+import FeatureGrid from "../../components/FeatureGrid.astro";
+
+const features = [
+  {
+    title: "Thought Capture",
+    description: "Jot down ideas the moment they arrive — no friction, no formatting required.",
+    icon: "💡",
+  },
+  {
+    title: "Calm Organization",
+    description: "Gentle structure that helps your thoughts find their place without overwhelming you.",
+    icon: "🗂️",
+  },
+  {
+    title: "Focused Clarity",
+    description: "A distraction-free canvas that lets you think clearly and act deliberately.",
+    icon: "🎯",
+  },
+];
+---
+
+<BaseLayout
+  title="Aerie — ErgoSum Studio"
+  description="A calm space to organize your thoughts and find clarity."
+>
+  <Hero
+    headline="Aerie"
+    subhead="A calm space to organize your thoughts and find clarity."
+    ctaLabel="Download on the App Store"
+    ctaHref="#"
+    secondaryCtaLabel="Get Support"
+    secondaryCtaHref="/support#aerie"
+  />
+
+  <FeatureGrid features={features} />
+
+  <!-- Screenshot gallery placeholder -->
+  <section class="py-24 sm:py-32">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="mb-12 text-center text-3xl font-semibold" data-reveal>A glimpse inside</h2>
+      <div class="grid gap-6 sm:grid-cols-3" data-reveal style="--reveal-delay: 100ms">
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
+        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy summary -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">Your data stays yours</h2>
+      <p class="mt-6 text-lg leading-relaxed text-apple-muted">
+        Aerie keeps your thoughts on-device. We don't collect personal data,
+        sell information to third parties, or track your usage. Read our full
+        <a href="/legal/privacy" class="text-blue-600 hover:underline">privacy policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Support CTA -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">Need help?</h2>
+      <p class="mt-4 text-lg text-apple-muted">
+        Reach us at
+        <a href="mailto:support@ergosum.studio" class="text-blue-600 hover:underline">support@ergosum.studio</a>
+        or visit our <a href="/support#aerie" class="text-blue-600 hover:underline">support page</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
