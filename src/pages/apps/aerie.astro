@@ -37,14 +37,17 @@ const features = [
 
   <FeatureGrid features={features} />
 
-  <!-- Screenshot gallery placeholder -->
+  <!-- Designed for callout band -->
   <section class="py-24 sm:py-32">
-    <div class="mx-auto max-w-5xl px-6">
-      <h2 class="mb-12 text-center text-3xl font-semibold" data-reveal>A glimpse inside</h2>
-      <div class="grid gap-6 sm:grid-cols-3" data-reveal style="--reveal-delay: 100ms">
-        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
-        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
-        <div class="aspect-[9/16] rounded-3xl bg-gradient-to-b from-sky-100 to-emerald-50"></div>
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <div class="space-y-4" data-reveal>
+        <p class="text-4xl font-semibold tracking-tight sm:text-5xl">Designed for clarity.</p>
+      </div>
+      <div class="mt-4 space-y-4" data-reveal style="--reveal-delay: 150ms">
+        <p class="text-4xl font-semibold tracking-tight text-apple-muted sm:text-5xl">Effortless capture.</p>
+      </div>
+      <div class="mt-4 space-y-4" data-reveal style="--reveal-delay: 300ms">
+        <p class="text-4xl font-semibold tracking-tight text-apple-muted sm:text-5xl">Calm by default.</p>
       </div>
     </div>
   </section>
