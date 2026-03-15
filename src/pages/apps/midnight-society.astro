@@ -5,34 +5,34 @@ import FeatureGrid from "../../components/FeatureGrid.astro";
 
 const features = [
   {
-    title: "Evening Wind-Down",
-    description: "Guided prompts help you transition from the busyness of the day into a calmer headspace.",
+    title: "Hidden Roles",
+    description: "Every player receives a secret identity with a unique ability. No two nights play out the same.",
+    icon: "🎭",
+  },
+  {
+    title: "Local Multiplayer",
+    description: "No accounts. No internet. Connect over local WiFi and play face to face — the way it should be.",
+    icon: "📡",
+  },
+  {
+    title: "One Night, One Truth",
+    description: "Rounds take minutes, not hours. Debate, accuse, vote — and discover who was hiding in plain sight.",
     icon: "🌙",
-  },
-  {
-    title: "Daily Reflections",
-    description: "Capture what went well and what you'd change — building a habit of honest self-awareness.",
-    icon: "📝",
-  },
-  {
-    title: "Sleep-Friendly Design",
-    description: "Dark interface with warm tones that won't disrupt your circadian rhythm before bed.",
-    icon: "🌑",
   },
 ];
 ---
 
 <BaseLayout
   title="Midnight Society — Ergo Sum"
-  description="Your night-time companion for winding down and reflecting on the day."
+  description="A social deduction game for 3–10 players. Hidden roles. Local multiplayer. One night changes everything."
 >
   <Hero
     headline="Midnight Society"
-    subhead="Your night-time companion for winding down and reflecting on the day."
+    subhead="Not everyone here is what they seem."
     ctaLabel="Download on the App Store"
     ctaHref="#"
     secondaryCtaLabel="Get Support"
-    secondaryCtaHref="/support#midnight-society"
+    secondaryCtaHref="/support/midnight-society"
   />
 
   <FeatureGrid features={features} />
@@ -52,13 +52,26 @@ const features = [
     </div>
   </section>
 
+  <!-- How it works -->
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">How it works</h2>
+      <p class="mt-6 text-lg leading-relaxed text-apple-muted">
+        One player hosts. Everyone else joins. Roles are dealt in secret — some belong to
+        the Order, others are Marked by the Midnight Society. Night falls, abilities activate,
+        and when the lights come up, the real game begins: five minutes to find the truth.
+        Choose carefully.
+      </p>
+    </div>
+  </section>
+
   <!-- Privacy summary -->
   <section class="py-24 sm:py-32" data-reveal>
     <div class="mx-auto max-w-2xl px-6 text-center">
       <h2 class="text-3xl font-semibold">Your data stays yours</h2>
       <p class="mt-6 text-lg leading-relaxed text-apple-muted">
-        Midnight Society stores your reflections on-device. We don't collect personal data,
-        sell information to third parties, or track your usage. Read our full
+        Midnight Society keeps everything on your device. No accounts, no tracking,
+        no data collection. Read our full
         <a href="/legal/privacy" class="text-blue-600 hover:underline">privacy policy</a>.
       </p>
     </div>
@@ -71,7 +84,7 @@ const features = [
       <p class="mt-4 text-lg text-apple-muted">
         Reach us at
         <a href="mailto:support@ergosum.studio" class="text-blue-600 hover:underline">support@ergosum.studio</a>
-        or visit our <a href="/support#midnight-society" class="text-blue-600 hover:underline">support page</a>.
+        or visit our <a href="/support/midnight-society" class="text-blue-600 hover:underline">support page</a>.
       </p>
     </div>
   </section>

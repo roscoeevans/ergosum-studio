@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Support — Ergo Sum" description="Get help with Ergo Sum apps.">
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h1 class="text-5xl font-semibold tracking-tight sm:text-6xl">Support</h1>
+      <p class="mt-6 text-xl leading-relaxed text-apple-muted">
+        Choose your app below, or reach us anytime at
+        <a href="mailto:support@ergosum.studio" class="text-blue-600 hover:underline">support@ergosum.studio</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="grid gap-6 sm:grid-cols-2">
+        <a
+          href="/support/midnight-society"
+          class="group rounded-3xl border border-apple-hairline bg-apple-card p-10 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-shadow hover:shadow-md"
+          data-reveal
+        >
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-900 to-slate-800 text-2xl text-white">
+            MS
+          </div>
+          <h2 class="text-2xl font-semibold">Midnight Society</h2>
+          <p class="mt-2 text-apple-muted leading-relaxed">
+            Local multiplayer social deduction for 3–10 players.
+          </p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600 group-hover:underline">
+            Get support &rarr;
+          </span>
+        </a>
+
+        <a
+          href="/support/aerie"
+          class="group rounded-3xl border border-apple-hairline bg-apple-card p-10 shadow-[0_2px_12px_rgba(0,0,0,0.06)] transition-shadow hover:shadow-md"
+          data-reveal
+          style="--reveal-delay: 100ms"
+        >
+          <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-400 to-emerald-400 text-2xl text-white">
+            Ae
+          </div>
+          <h2 class="text-2xl font-semibold">Aerie</h2>
+          <p class="mt-2 text-apple-muted leading-relaxed">
+            A calm space to organize your thoughts and find clarity.
+          </p>
+          <span class="mt-4 inline-block text-sm font-medium text-blue-600 group-hover:underline">
+            Get support &rarr;
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Midnight Society Support — Ergo Sum"
+  description="Get help with Midnight Society — a local multiplayer social deduction game."
+>
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h1 class="text-5xl font-semibold tracking-tight sm:text-6xl">Midnight Society</h1>
+      <p class="mt-6 text-xl leading-relaxed text-apple-muted">
+        A local multiplayer social deduction game for 3–10 players. No internet required — just
+        gather your friends on the same WiFi network and start playing.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h2 class="text-3xl font-semibold">System Requirements</h2>
+      <ul class="mt-6 space-y-3 text-lg text-apple-muted">
+        <li class="flex gap-3">
+          <span class="font-medium text-apple-text">iOS</span> — 26.0 or later
+        </li>
+        <li class="flex gap-3">
+          <span class="font-medium text-apple-text">Devices</span> — iPhone and iPad (universal)
+        </li>
+        <li class="flex gap-3">
+          <span class="font-medium text-apple-text">Network</span> — Local WiFi only. No internet connection required.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="py-16" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h2 class="text-3xl font-semibold">Getting Started</h2>
+      <div class="mt-6 space-y-4 text-lg leading-relaxed text-apple-muted">
+        <p>
+          Make sure all players are connected to the same WiFi network. One person creates a game
+          as the host, and everyone else joins from the lobby screen. Once everyone's in, the host
+          starts the game.
+        </p>
+        <p>
+          A typical game lasts about 10–20 minutes and runs through several phases: role reveal,
+          night, discussion, voting, and results.
+        </p>
+        <p>
+          The discussion phase has a 5-minute timer that the host can pause if needed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h2 class="text-3xl font-semibold">Multiplayer &amp; Connectivity</h2>
+      <div class="mt-6 space-y-6">
+        <div>
+          <h3 class="text-lg font-medium">How does multiplayer work?</h3>
+          <p class="mt-2 text-lg text-apple-muted">
+            Midnight Society uses local WiFi (Bonjour/mDNS) to connect players. The host advertises
+            the game, and nearby players on the same network can browse and join. There's a
+            30-second window to accept invitations.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium">Do I need Bluetooth?</h3>
+          <p class="mt-2 text-lg text-apple-muted">
+            No. The game uses WiFi only. All players must be on the same local network.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium">I can't find other players.</h3>
+          <p class="mt-2 text-lg text-apple-muted">
+            Make sure everyone is on the same WiFi network, and that each player has granted the
+            app Local Network permission in Settings → Privacy & Security → Local Network.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium">Someone disconnected mid-game.</h3>
+          <p class="mt-2 text-lg text-apple-muted">
+            Disconnected players are tracked by the game and can rejoin. The host will receive an
+            updated game state when they reconnect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h2 class="text-3xl font-semibold">In-App Purchases</h2>
+      <div class="mt-6 space-y-4 text-lg text-apple-muted">
+        <p>
+          Midnight Society includes one optional purchase:
+        </p>
+        <ul class="list-inside list-disc space-y-2">
+          <li>
+            <span class="font-medium text-apple-text">Doomsayer Role</span> — $2.99 (one-time purchase). Unlocks an additional role for your games.
+          </li>
+        </ul>
+        <p>
+          This is a non-consumable purchase tied to your Apple ID. If you've already purchased it,
+          you can restore it from the in-app purchase screen via Restore Purchases.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" data-reveal>
+    <div class="mx-auto max-w-2xl px-6">
+      <h2 class="text-3xl font-semibold">Data &amp; Privacy</h2>
+      <div class="mt-6 space-y-4 text-lg text-apple-muted">
+        <p>
+          Midnight Society stores all data locally on your device. There are no accounts, no cloud
+          sync, no analytics, and no tracking.
+        </p>
+        <ul class="list-inside list-disc space-y-2">
+          <li>
+            <span class="font-medium text-apple-text">Profile data</span> — Your name, avatar
+            symbol, avatar color, and optional photo are stored on-device only.
+          </li>
+          <li>
+            <span class="font-medium text-apple-text">Purchase history</span> — Cached locally
+            for convenience. The App Store is the source of truth.
+          </li>
+          <li>
+            <span class="font-medium text-apple-text">Deleting your data</span> — You can delete
+            your profile from within the app. To remove all app data completely, delete and
+            reinstall the app.
+          </li>
+        </ul>
+        <p>
+          For full details, see our <a href="/legal/privacy" class="text-blue-600 hover:underline">privacy policy</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 sm:py-32" data-reveal>
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl font-semibold">Still need help?</h2>
+      <p class="mt-4 text-lg text-apple-muted">
+        Email us at
+        <a href="mailto:support@ergosum.studio" class="text-blue-600 hover:underline">support@ergosum.studio</a>
+        and we'll get back to you as soon as we can.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
